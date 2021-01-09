@@ -1,0 +1,19 @@
+image: node:10.18.0 # can be upgraded, depending on your node version used
+# Cache node modules - speeds up future builds
+cache:
+  paths:
+    - build
+    - node_modules
+pages:
+  stage: deploy
+  script:
+    - npm install
+    - npm run build
+    - rm -rf public
+    - mv build public
+    - cp public/index.html public/404.html
+  artifacts:
+    paths:
+      - public
+  only:
+    - staging
