@@ -4,14 +4,16 @@ import Grid from '@material-ui/core/Grid';
 import Link from '@material-ui/core/Link';
 import Container from '@material-ui/core/Container';
 import Typography from '../components/Typography';
-import TextField from '../components/TextField';
+import GitHubIcon from '@material-ui/icons/GitHub';
+import TwitterIcon from '@material-ui/icons/Twitter';
+import InstagramIcon from '@material-ui/icons/Instagram';
 
 function Copyright() {
   return (
     <React.Fragment>
       {'© '}
       <Link color="inherit" href="https://material-ui.com/">
-        Your Website
+        Robert Joseph Williams
       </Link>{' '}
       {new Date().getFullYear()}
     </React.Fragment>
@@ -21,7 +23,8 @@ function Copyright() {
 const useStyles = makeStyles((theme) => ({
   root: {
     display: 'flex',
-    backgroundColor: theme.palette.secondary.light,
+    backgroundColor: theme.palette.secondary.main,
+    marginTop: 150
   },
   container: {
     marginTop: theme.spacing(8),
@@ -40,11 +43,12 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: theme.palette.warning.main,
+    backgroundColor: theme.palette.primary.main,
     marginRight: theme.spacing(1),
     '&:hover': {
-      backgroundColor: theme.palette.warning.dark,
+      backgroundColor: theme.palette.primary.dark,
     },
+    color: theme.palette.secondary.light
   },
   list: {
     margin: 0,
@@ -61,16 +65,6 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const LANGUAGES = [
-  {
-    code: 'en-US',
-    name: 'English',
-  },
-  {
-    code: 'fr-FR',
-    name: 'Français',
-  },
-];
 
 export default function AppFooter() {
   const classes = useStyles();
@@ -88,77 +82,20 @@ export default function AppFooter() {
               spacing={2}
             >
               <Grid item className={classes.icons}>
-                <a href="https://material-ui.com/" className={classes.icon}>
-                  <img
-                    src="/static/themes/onepirate/appFooterFacebook.png"
-                    alt="Facebook"
-                  />
+                <a href="https://github.com/robjwilliams" className={classes.icon}>
+                  <GitHubIcon />
                 </a>
-                <a href="https://twitter.com/MaterialUI" className={classes.icon}>
-                  <img
-                    src="/static/themes/onepirate/appFooterTwitter.png"
-                    alt="Twitter"
-                  />
+                <a href="https://twitter.com/robjwilliams_" className={classes.icon}>
+                  <TwitterIcon />
+                </a>
+                <a href="https://www.instagram.com/robertjwilliams_/" className={classes.icon}>
+                  <InstagramIcon />
                 </a>
               </Grid>
               <Grid item>
                 <Copyright />
               </Grid>
             </Grid>
-          </Grid>
-          <Grid item xs={6} sm={4} md={2}>
-            <Typography variant="h6" marked="left" gutterBottom>
-              Legal
-            </Typography>
-            <ul className={classes.list}>
-              <li className={classes.listItem}>
-                <Link href="/premium-themes/onepirate/terms/">Terms</Link>
-              </li>
-              <li className={classes.listItem}>
-                <Link href="/premium-themes/onepirate/privacy/">Privacy</Link>
-              </li>
-            </ul>
-          </Grid>
-          <Grid item xs={6} sm={8} md={4}>
-            <Typography variant="h6" marked="left" gutterBottom>
-              Language
-            </Typography>
-            <TextField
-              size="medium"
-              select
-              SelectProps={{
-                native: true,
-              }}
-              className={classes.language}
-              variant="standard"
-            >
-              {LANGUAGES.map((language) => (
-                <option value={language.code} key={language.code}>
-                  {language.name}
-                </option>
-              ))}
-            </TextField>
-          </Grid>
-          <Grid item>
-            <Typography variant="caption">
-              {'Icons made by '}
-              <Link href="https://www.freepik.com" rel="sponsored" title="Freepik">
-                Freepik
-              </Link>
-              {' from '}
-              <Link href="https://www.flaticon.com" rel="sponsored" title="Flaticon">
-                www.flaticon.com
-              </Link>
-              {' is licensed by '}
-              <Link
-                href="https://creativecommons.org/licenses/by/3.0/"
-                title="Creative Commons BY 3.0"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                CC 3.0 BY
-              </Link>
-            </Typography>
           </Grid>
         </Grid>
       </Container>
