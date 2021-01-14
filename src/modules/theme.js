@@ -10,8 +10,8 @@ const rawTheme = createMuiTheme({
     },
     secondary: {
       light: '#fff5f8',
-      main: '#ff3366',
-      dark: '#e62958',
+      main: '#109e92',
+      dark: '#10756d',
     },
     warning: {
       main: '#ffc071',

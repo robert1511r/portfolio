@@ -11,9 +11,8 @@ const styles = (theme) => ({
     display: 'flex',
     alignItems: 'center',
     [theme.breakpoints.up('sm')]: {
-      height: '80vh',
       minHeight: 500,
-      maxHeight: 1300,
+      height: '100vh',
     },
   },
   container: {
@@ -42,11 +41,7 @@ const styles = (theme) => ({
     backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat',
     zIndex: -2,
-  },
-  arrowDown: {
-    position: 'absolute',
-    bottom: theme.spacing(4),
-  },
+  }
 });
 
 function ProductHeroLayout(props) {
@@ -56,21 +51,14 @@ function ProductHeroLayout(props) {
     <section className={classes.root}>
       <Container className={classes.container}>
         <img
-          src="/static/themes/onepirate/productHeroWonder.png"
-          alt="wonder"
-          width="147"
-          height="80"
+          src="/logo.png"
+          alt="logo"
+          width="100"
+          height="100"
         />
         {children}
         <div className={classes.backdrop} />
         <div className={clsx(classes.background, backgroundClassName)} />
-        <img
-          className={classes.arrowDown}
-          src="/static/themes/onepirate/productHeroArrowDown.png"
-          height="16"
-          width="12"
-          alt="arrow down"
-        />
       </Container>
     </section>
   );

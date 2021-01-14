@@ -6,7 +6,7 @@ import Typography from '../components/Typography';
 import ProductHeroLayout from './ProductHeroLayout';
 
 const backgroundImage =
-  'https://images.pexels.com/photos/577514/pexels-photo-577514.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940';
+  'https://images.pexels.com/photos/924824/pexels-photo-924824.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940';
 
 const styles = (theme) => ({
   background: {
@@ -46,13 +46,10 @@ function ProductHero(props) {
         size="large"
         className={classes.button}
         component="a"
-        href="/premium-themes/onepirate/sign-up/"
+        href="#info"
       >
-        Learn
+        Learn More
       </Button>
-      <Typography variant="body2" color="inherit" className={classes.more}>
-        Discover the experience
-      </Typography>
     </ProductHeroLayout>
   );
 }

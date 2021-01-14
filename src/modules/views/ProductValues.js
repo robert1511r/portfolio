@@ -41,7 +41,7 @@ function ProductValues(props) {
   const { classes } = props;
 
   return (
-    <section className={classes.root}>
+    <section id="info" className={classes.root}>
       <Container className={classes.container}>
         <img
           src="/static/themes/onepirate/productCurvyLines.png"
