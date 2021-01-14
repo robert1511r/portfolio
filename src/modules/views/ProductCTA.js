@@ -11,7 +11,7 @@ import Button from '../components/Button';
 
 const styles = (theme) => ({
   root: {
-    marginTop: theme.spacing(10),
+    marginTop: 150,
     marginBottom: 0,
     display: 'flex',
   },
@@ -21,7 +21,7 @@ const styles = (theme) => ({
   card: {
     display: 'flex',
     justifyContent: 'center',
-    backgroundColor: theme.palette.warning.main,
+    backgroundColor: theme.palette.secondary.main,
     padding: theme.spacing(8, 3),
   },
   cardContent: {
