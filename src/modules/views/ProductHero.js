@@ -40,7 +40,7 @@ function ProductHero(props) {
       <Typography color="inherit" align="center" variant="h5" className={classes.h5}>
         Full-Stack Software Developer
       </Typography>
-      {/* <Button
+      <Button
         color="secondary"
         variant="contained"
         size="large"
@@ -49,10 +49,10 @@ function ProductHero(props) {
         href="/premium-themes/onepirate/sign-up/"
       >
         Learn
-      </Button> */}
-      {/* <Typography variant="body2" color="inherit" className={classes.more}>
+      </Button>
+      <Typography variant="body2" color="inherit" className={classes.more}>
         Discover the experience
-      </Typography> */}
+      </Typography>
     </ProductHeroLayout>
   );
 }
