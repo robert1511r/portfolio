@@ -9,6 +9,7 @@ const styles = (theme) => ({
   root: {
     marginTop: theme.spacing(8),
     marginBottom: theme.spacing(4),
+    backgroundColor: theme.palette.secondary.light,
   },
   images: {
     marginTop: theme.spacing(8),
