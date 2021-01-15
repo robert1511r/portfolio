@@ -115,7 +115,7 @@ function ProductCTA(props) {
           </div>
         </Grid>
         <Grid item xs={12} md={6} className={classes.imagesWrapper}>
-          <Hidden mdDown>
+          <Hidden smDown>
             <div className={classes.imageDots} />
             <img
               src="https://images.pexels.com/photos/618613/pexels-photo-618613.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
