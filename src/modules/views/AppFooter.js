@@ -82,13 +82,13 @@ export default function AppFooter() {
               spacing={2}
             >
               <Grid item className={classes.icons}>
-                <a href="https://github.com/robjwilliams" target="_blank" className={classes.icon}>
+                <a href="https://github.com/robjwilliams" target="_blank" rel="noreferrer" className={classes.icon}>
                   <GitHubIcon />
                 </a>
-                <a href="https://twitter.com/robjwilliams_" target="_blank" className={classes.icon}>
+                <a href="https://twitter.com/robjwilliams_" target="_blank" rel="noreferrer" className={classes.icon}>
                   <TwitterIcon />
                 </a>
-                <a href="https://www.instagram.com/robertjwilliams_/" target="_blank" className={classes.icon}>
+                <a href="https://www.instagram.com/robertjwilliams_/" target="_blank" rel="noreferrer" className={classes.icon}>
                   <InstagramIcon />
                 </a>
               </Grid>
