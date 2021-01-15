@@ -4,6 +4,9 @@ import { withStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import Container from '@material-ui/core/Container';
 import Typography from '../components/Typography';
+import LaptopWorking from '../components/LaptopWorking';
+import ModernTechnologies from '../components/ModernTechnologies';
+import FlyingYoga from '../components/FlyingYoga';
 
 const styles = (theme) => ({
   root: {
@@ -12,8 +15,7 @@ const styles = (theme) => ({
     backgroundColor: theme.palette.secondary.light,
   },
   container: {
-    marginTop: theme.spacing(15),
-    marginBottom: theme.spacing(30),
+    marginBottom: theme.spacing(10),
     display: 'flex',
     position: 'relative',
   },
@@ -51,57 +53,40 @@ function ProductValues(props) {
         <Grid container spacing={5}>
           <Grid item xs={12} md={4}>
             <div className={classes.item}>
-              <img
-                className={classes.image}
-                src="/static/themes/onepirate/productValues1.svg"
-                alt="suitcase"
-              />
+              <LaptopWorking />
               <Typography variant="h6" className={classes.title}>
-                The best luxury hotels
+                Quality Software
               </Typography>
               <Typography variant="h5">
                 {
-                  'From the latest trendy boutique hotel to the iconic palace with XXL pool'
-                }
-
-                {
-                  ', go for a mini-vacation just a few subway stops away from your home.'
+                  'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
                 }
               </Typography>
             </div>
           </Grid>
           <Grid item xs={12} md={4}>
             <div className={classes.item}>
-              <img
-                className={classes.image}
-                src="/static/themes/onepirate/productValues2.svg"
-                alt="graph"
-              />
+              <FlyingYoga />
               <Typography variant="h6" className={classes.title}>
-                New experiences
+                Agile Development
               </Typography>
               <Typography variant="h5">
                 {
-                  'Privatize a pool, take a Japanese bath or wake up in 900m2 of garden… '
+                  'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
                 }
-
-                {'your Sundays will not be alike.'}
               </Typography>
             </div>
           </Grid>
           <Grid item xs={12} md={4}>
             <div className={classes.item}>
-              <img
-                className={classes.image}
-                src="/static/themes/onepirate/productValues3.svg"
-                alt="clock"
-              />
+              <ModernTechnologies />
               <Typography variant="h6" className={classes.title}>
-                Exclusive rates
+                Responsive Design
               </Typography>
               <Typography variant="h5">
-                {'By registering, you will access specially negotiated rates '}
-                {'that you will not find anywhere else.'}
+                {
+                  'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+                }
               </Typography>
             </div>
           </Grid>

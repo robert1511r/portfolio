@@ -68,63 +68,25 @@ function ProductHowItWorks(props) {
           className={classes.title}
           component="h2"
         >
-          How it works
+          About Me
         </Typography>
         <div>
           <Grid container spacing={5}>
-            <Grid item xs={12} md={4}>
+            <Grid>
               <div className={classes.item}>
-                <div className={classes.number}>1.</div>
-                <img
-                  src="/static/themes/onepirate/productHowItWorks1.svg"
-                  alt="suitcase"
-                  className={classes.image}
-                />
                 <Typography variant="h5" align="center">
-                  Appointment every Wednesday 9am.
-                </Typography>
-              </div>
-            </Grid>
-            <Grid item xs={12} md={4}>
-              <div className={classes.item}>
-                <div className={classes.number}>2.</div>
-                <img
-                  src="/static/themes/onepirate/productHowItWorks2.svg"
-                  alt="graph"
-                  className={classes.image}
-                />
-                <Typography variant="h5" align="center">
-                  First come, first served. Our offers are in limited quantities, so
-                  be quick.
-                </Typography>
-              </div>
-            </Grid>
-            <Grid item xs={12} md={4}>
-              <div className={classes.item}>
-                <div className={classes.number}>3.</div>
-                <img
-                  src="/static/themes/onepirate/productHowItWorks3.svg"
-                  alt="clock"
-                  className={classes.image}
-                />
-                <Typography variant="h5" align="center">
-                  {'New offers every week. New experiences, new surprises. '}
-                  {'Your Sundays will no longer be alike.'}
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed 
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                  nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
+                  reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                  Excepteur sint occaecat cupidatat non proident, 
+                  sunt in culpa qui officia deserunt mollit anim id est laborum
                 </Typography>
               </div>
             </Grid>
           </Grid>
         </div>
-        <Button
-          color="secondary"
-          size="large"
-          variant="contained"
-          className={classes.button}
-          component="a"
-          href="/premium-themes/onepirate/sign-up/"
-        >
-          Get started
-        </Button>
       </Container>
     </section>
   );

@@ -21,7 +21,7 @@ const styles = (theme) => ({
   card: {
     display: 'flex',
     justifyContent: 'center',
-    backgroundColor: theme.palette.secondary.main,
+    backgroundColor: theme.palette.primary.main,
     padding: theme.spacing(8, 3),
   },
   cardContent: {
@@ -32,8 +32,16 @@ const styles = (theme) => ({
     marginTop: theme.spacing(3),
     marginBottom: theme.spacing(2),
   },
+  text: {
+    color: theme.palette.secondary.light,
+  },
   button: {
     width: '100%',
+    color: theme.palette.primary.dark,
+    backgroundColor: theme.palette.secondary.main,
+    '&:hover': {
+      backgroundColor: theme.palette.secondary.dark,
+    },
   },
   imagesWrapper: {
     position: 'relative',
@@ -77,16 +85,22 @@ function ProductCTA(props) {
         <Grid item xs={12} md={6} className={classes.cardWrapper}>
           <div className={classes.card}>
             <form onSubmit={handleSubmit} className={classes.cardContent}>
-              <Typography variant="h2" component="h2" gutterBottom>
-                Receive offers
+              <Typography variant="h2" component="h2" gutterBottom className={classes.text}>
+                Get in touch
               </Typography>
-              <Typography variant="h5">
-                Taste the holidays of the everyday close to home.
+              <Typography variant="h5" className={classes.text}>
+                I am ready for new challenges, do you have one for me?
               </Typography>
               <TextField
                 noBorder
                 className={classes.textField}
-                placeholder="Your email"
+                placeholder="Name"
+                variant="standard"
+              />
+              <TextField
+                noBorder
+                className={classes.textField}
+                placeholder="Email"
                 variant="standard"
               />
               <Button
@@ -95,7 +109,7 @@ function ProductCTA(props) {
                 variant="contained"
                 className={classes.button}
               >
-                Keep me updated
+                Send Message
               </Button>
             </form>
           </div>
@@ -104,7 +118,7 @@ function ProductCTA(props) {
           <Hidden mdDown>
             <div className={classes.imageDots} />
             <img
-              src="https://images.unsplash.com/photo-1527853787696-f7be74f2e39a?auto=format&fit=crop&w=750&q=80"
+              src="https://images.pexels.com/photos/618613/pexels-photo-618613.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
               alt="call to action"
               className={classes.image}
             />

@@ -23,7 +23,7 @@ function Copyright() {
 const useStyles = makeStyles((theme) => ({
   root: {
     display: 'flex',
-    backgroundColor: theme.palette.secondary.main,
+    backgroundColor: theme.palette.primary.main,
     marginTop: 150
   },
   container: {
@@ -43,12 +43,12 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: theme.palette.primary.main,
+    backgroundColor: theme.palette.secondary.main,
     marginRight: theme.spacing(1),
     '&:hover': {
-      backgroundColor: theme.palette.primary.dark,
+      backgroundColor: theme.palette.secondary.dark,
     },
-    color: theme.palette.secondary.light
+    color: theme.palette.primary.dark
   },
   list: {
     margin: 0,
@@ -82,13 +82,13 @@ export default function AppFooter() {
               spacing={2}
             >
               <Grid item className={classes.icons}>
-                <a href="https://github.com/robjwilliams" className={classes.icon}>
+                <a href="https://github.com/robjwilliams" target="_blank" className={classes.icon}>
                   <GitHubIcon />
                 </a>
-                <a href="https://twitter.com/robjwilliams_" className={classes.icon}>
+                <a href="https://twitter.com/robjwilliams_" target="_blank" className={classes.icon}>
                   <TwitterIcon />
                 </a>
-                <a href="https://www.instagram.com/robertjwilliams_/" className={classes.icon}>
+                <a href="https://www.instagram.com/robertjwilliams_/" target="_blank" className={classes.icon}>
                   <InstagramIcon />
                 </a>
               </Grid>

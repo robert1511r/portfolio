@@ -146,9 +146,14 @@ function ProductCategories(props) {
 
   return (
     <Container className={classes.root} component="section">
-      <Typography variant="h4" marked="center" align="center" component="h2">
-        For all tastes and all desires
-      </Typography>
+      <Typography
+          variant="h4"
+          marked="center"
+          className={classes.title}
+          component="h2"
+        >
+          Portfolio
+        </Typography>
       <div className={classes.images}>
         {images.map((image) => (
           <ButtonBase

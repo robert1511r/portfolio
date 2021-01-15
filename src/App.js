@@ -12,8 +12,8 @@ function Index() {
   return (
     <React.Fragment>
       <ProductHero />
-      <ProductValues />
       <ProductHowItWorks />
+      <ProductValues />
       <ProductCategories />
       <ProductCTA />
       <AppFooter />
