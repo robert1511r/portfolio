@@ -3,14 +3,13 @@ import Lottie from "react-lottie-player";
 
 import animationData from "./LaptopWorking.animation.json";
 
-export const LaptopWorking = (props) => {
+export const LaptopWorking = () => {
 
   return (
     <Lottie
         loop
         animationData={animationData}
         play
-        className={props.className}
     />
   );
 };

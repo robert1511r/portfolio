@@ -37,21 +37,6 @@ const styles = (theme) => ({
     position: 'absolute',
     top: -180,
   },
-  laptopContainer: {
-    marginTop: 64
-  },
-  laptop: {
-    position: 'relative',
-    bottom: 18
-  },
-  yoga: {
-    position: 'relative',
-    bottom: -20
-  },
-  tech: {
-    position: 'relative',
-    bottom: -25
-  }
 });
 
 function ProductValues(props) {
@@ -66,9 +51,9 @@ function ProductValues(props) {
           alt="curvy lines"
         />
         <Grid container spacing={5}>
-          <Grid item xs={12} md={4} className={classes.laptopContainer}>
+          <Grid item xs={12} md={4}>
             <div className={classes.item}>
-              <LaptopWorking className={classes.laptop} />
+              <LaptopWorking />
               <Typography variant="h6" className={classes.title}>
                 Quality Software
               </Typography>
@@ -81,7 +66,7 @@ function ProductValues(props) {
           </Grid>
           <Grid item xs={12} md={4}>
             <div className={classes.item}>
-              <FlyingYoga className={classes.yoga} />
+              <FlyingYoga />
               <Typography variant="h6" className={classes.title}>
                 Agile Development
               </Typography>
@@ -94,7 +79,7 @@ function ProductValues(props) {
           </Grid>
           <Grid item xs={12} md={4}>
             <div className={classes.item}>
-              <ModernTechnologies className={classes.tech} />
+              <ModernTechnologies />
               <Typography variant="h6" className={classes.title}>
                 Responsive Design
               </Typography>
