@@ -96,7 +96,8 @@ export default function AppFooter() {
                 </a>
               </Grid>
               <Grid item>
-                <Copyright />
+                <Copyright /><br/>
+                {'+54 11 2664-3261'}
               </Grid>
             </Grid>
           </Grid>
