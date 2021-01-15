@@ -63,6 +63,9 @@ const useStyles = makeStyles((theme) => ({
     marginTop: theme.spacing(1),
     width: 150,
   },
+  grid: {
+    width: '100%'
+  }
 }));
 
 
@@ -72,7 +75,7 @@ export default function AppFooter() {
   return (
     <Typography component="footer" className={classes.root}>
       <Container className={classes.container}>
-        <Grid container spacing={5}>
+        <Grid container spacing={5} className={classes.grid}>
           <Grid item xs={6} sm={4} md={3}>
             <Grid
               container
