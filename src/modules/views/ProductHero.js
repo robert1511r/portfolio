@@ -28,6 +28,9 @@ const styles = (theme) => ({
   more: {
     marginTop: theme.spacing(2),
   },
+  name: {
+    marginTop: 30
+  }
 });
 
 function ProductHero(props) {
@@ -35,7 +38,7 @@ function ProductHero(props) {
 
   return (
     <ProductHeroLayout backgroundClassName={classes.background}>
-      <Typography color="inherit" align="center" variant="h2" marked="center">
+      <Typography color="inherit" align="center" variant="h2" marked="center" className={classes.name}>
         Rob Joseph Williams
       </Typography>
       <Typography align="center" variant="h5" className={classes.h5}>
