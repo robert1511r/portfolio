@@ -51,7 +51,7 @@ function ProductHeroLayout(props) {
     <section className={classes.root}>
       <Container className={classes.container}>
         <img
-          src="/logo.png"
+          src="/logo2.png"
           alt="logo"
           width="100"
           height="100"

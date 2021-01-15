@@ -23,7 +23,7 @@ function Copyright() {
 const useStyles = makeStyles((theme) => ({
   root: {
     display: 'flex',
-    backgroundColor: theme.palette.primary.main,
+    backgroundColor: '#fff',
     marginTop: 150
   },
   container: {
@@ -43,10 +43,10 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: theme.palette.secondary.main,
+    backgroundColor: 'transparent',
     marginRight: theme.spacing(1),
     '&:hover': {
-      backgroundColor: theme.palette.secondary.dark,
+      backgroundColor: theme.palette.secondary.main,
     },
     color: theme.palette.primary.dark
   },

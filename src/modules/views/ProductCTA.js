@@ -38,7 +38,6 @@ const styles = (theme) => ({
   },
   button: {
     width: '100%',
-    color: theme.palette.primary.dark,
     backgroundColor: theme.palette.secondary.main,
     '&:hover': {
       backgroundColor: theme.palette.secondary.dark,

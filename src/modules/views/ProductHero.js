@@ -23,6 +23,7 @@ const styles = (theme) => ({
     [theme.breakpoints.up('sm')]: {
       marginTop: theme.spacing(10),
     },
+    color: '#fff !important'
   },
   more: {
     marginTop: theme.spacing(2),
@@ -37,7 +38,7 @@ function ProductHero(props) {
       <Typography color="inherit" align="center" variant="h2" marked="center">
         Rob Joseph Williams
       </Typography>
-      <Typography color="inherit" align="center" variant="h5" className={classes.h5}>
+      <Typography align="center" variant="h5" className={classes.h5}>
         Full-Stack Software Developer
       </Typography>
       <Button
@@ -46,7 +47,7 @@ function ProductHero(props) {
         size="large"
         className={classes.button}
         component="a"
-        href="#info"
+        href="#about-me"
       >
         Learn More
       </Button>
