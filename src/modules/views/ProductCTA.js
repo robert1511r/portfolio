@@ -21,7 +21,9 @@ const styles = (theme) => ({
   card: {
     display: 'flex',
     justifyContent: 'center',
-    backgroundColor: theme.palette.primary.main,
+    backgroundColor: '#fbfbfb',
+    borderRadius: '2px',
+    boxShadow: '0 15px 35px rgba(50,50,93,0.1), 0 5px 15px rgba(0,0,0,0.07)',
     padding: theme.spacing(8, 3),
   },
   cardContent: {
@@ -31,9 +33,8 @@ const styles = (theme) => ({
     width: '100%',
     marginTop: theme.spacing(3),
     marginBottom: theme.spacing(2),
-  },
-  text: {
-    color: theme.palette.secondary.light,
+    borderRadius: '7px',
+    border: '1px solid #f7f7f7'
   },
   button: {
     width: '100%',
@@ -88,7 +89,7 @@ function ProductCTA(props) {
               <Typography variant="h2" component="h2" gutterBottom className={classes.text}>
                 Get in touch
               </Typography>
-              <Typography variant="h5" className={classes.text}>
+              <Typography variant="h5">
                 I am ready for new challenges, do you have one for me?
               </Typography>
               <TextField
