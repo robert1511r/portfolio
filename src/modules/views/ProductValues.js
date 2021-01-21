@@ -58,9 +58,9 @@ function ProductValues(props) {
                 Quality Software
               </Typography>
               <Typography variant="h5">
-                {
-                  'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
-                }
+                Prioritizing performance and efficiency while writing code so it can scale 
+                and be maintained accordingly. Constantly following the Don’t Repeat Yourself (DRY)
+                principles and Test Driven Development (TDD) process. 
               </Typography>
             </div>
           </Grid>
@@ -71,9 +71,9 @@ function ProductValues(props) {
                 Agile Development
               </Typography>
               <Typography variant="h5">
-                {
-                  'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
-                }
+                Comfortable working with agile development processes like SCRUM. 
+                Driven towards the DevOps mindset to continuously write and deliver 
+                code that adds value to the project based on client’s and business model requirements.
               </Typography>
             </div>
           </Grid>
@@ -84,9 +84,8 @@ function ProductValues(props) {
                 Responsive Design
               </Typography>
               <Typography variant="h5">
-                {
-                  'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
-                }
+                Following the mobile first approach using CSS frameworks when implementing the design, 
+                offering fast and seamless user experience. 
               </Typography>
             </div>
           </Grid>
