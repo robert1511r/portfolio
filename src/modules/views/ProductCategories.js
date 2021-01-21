@@ -4,6 +4,7 @@ import { withStyles } from '@material-ui/core/styles';
 import ButtonBase from '@material-ui/core/ButtonBase';
 import Container from '@material-ui/core/Container';
 import Typography from '../components/Typography';
+import ProjectModal from '../components/ProjectModal';
 
 const styles = (theme) => ({
   root: {
@@ -91,52 +92,63 @@ function ProductCategories(props) {
     {
       url: '',
       title: 'Project',
-      width: '40%',
+      width: '33%',
     },
     {
       url: '',
       title: 'Project',
-      width: '20%',
+      width: '33%',
     },
     {
       url: '',
       title: 'Project',
-      width: '40%',
+      width: '33%',
     },
     {
       url: '',
       title: 'Project',
-      width: '38%',
+      width: '33%',
     },
     {
       url: '',
       title: 'Project',
-      width: '38%',
+      width: '33%',
     },
     {
       url: '',
       title: 'Project',
-      width: '24%',
+      width: '33%',
     },
     {
       url: '',
       title: 'Project',
-      width: '40%',
+      width: '33%',
     },
     {
       url: '',
       title: 'Project',
-      width: '20%',
+      width: '33%',
     },
     {
       url: '',
       title: 'Project',
-      width: '40%',
+      width: '33%',
     },
   ];
 
+  const [open, setOpen] = React.useState(false);
+
+  const handleOpenModal = () => {
+    setOpen(true);
+  };
+
+  const handleCloseModal = () => {
+    setOpen(false);
+  };
+
   return (
     <Container className={classes.root} component="section">
+      <ProjectModal open={open} handleCloseModal={handleCloseModal} />
       <Typography
           variant="h4"
           marked="center"
@@ -153,6 +165,7 @@ function ProductCategories(props) {
             style={{
               width: image.width,
             }}
+            onClick={handleOpenModal}
           >
             <div
               className={classes.imageSrc}
