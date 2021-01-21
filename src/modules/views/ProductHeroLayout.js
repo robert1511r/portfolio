@@ -10,9 +10,9 @@ const styles = (theme) => ({
     position: 'relative',
     display: 'flex',
     alignItems: 'center',
+    height: '100vh',
     [theme.breakpoints.up('sm')]: {
-      minHeight: 500,
-      height: '100vh',
+      minHeight: 500
     },
   },
   container: {
