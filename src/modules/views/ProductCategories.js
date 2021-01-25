@@ -135,16 +135,6 @@ function ProductCategories(props) {
     },
   ];
 
-  const [open, setOpen] = React.useState(false);
-
-  const handleOpenModal = () => {
-    setOpen(true);
-  };
-
-  const handleCloseModal = () => {
-    setOpen(false);
-  };
-
   return (
     <Container className={classes.root} component="section">
       <Typography
@@ -163,7 +153,6 @@ function ProductCategories(props) {
             style={{
               width: image.width,
             }}
-            onClick={handleOpenModal}
           >
             <div
               className={classes.imageSrc}
