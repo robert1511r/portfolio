@@ -4,7 +4,6 @@ import { withStyles } from '@material-ui/core/styles';
 import ButtonBase from '@material-ui/core/ButtonBase';
 import Container from '@material-ui/core/Container';
 import Typography from '../components/Typography';
-import ProjectModal from '../components/ProjectModal';
 
 const styles = (theme) => ({
   root: {
@@ -148,7 +147,6 @@ function ProductCategories(props) {
 
   return (
     <Container className={classes.root} component="section">
-      <ProjectModal open={open} handleCloseModal={handleCloseModal} />
       <Typography
           variant="h4"
           marked="center"

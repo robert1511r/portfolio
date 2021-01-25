@@ -21,19 +21,7 @@ const styles = (theme) => ({
 });
 
 function ProjectModal(props) {
-  console.log(props)
   const { classes, open, handleCloseModal } = props;
-  console.log(classes.paper)
-
-  const body = (
-    <div className={classes.paper}>
-      <h2 id="simple-modal-title">Text in a modal</h2>
-      <p id="simple-modal-description">
-        Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
-      </p>
-      <ProjectModal />
-    </div>
-  );
 
   return (
     <div>
