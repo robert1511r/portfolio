@@ -1,9 +1,10 @@
-import * as React from 'react';
+import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import ButtonBase from '@material-ui/core/ButtonBase';
 import Container from '@material-ui/core/Container';
 import Typography from '../components/Typography';
+import axios from '../../axios.config';
 
 const styles = (theme) => ({
   root: {
@@ -86,54 +87,14 @@ const styles = (theme) => ({
 
 function ProductCategories(props) {
   const { classes } = props;
-
-  const images = [
-    {
-      url: '',
-      title: 'Project',
-      width: '33%',
-    },
-    {
-      url: '',
-      title: 'Project',
-      width: '33%',
-    },
-    {
-      url: '',
-      title: 'Project',
-      width: '33%',
-    },
-    {
-      url: '',
-      title: 'Project',
-      width: '33%',
-    },
-    {
-      url: '',
-      title: 'Project',
-      width: '33%',
-    },
-    {
-      url: '',
-      title: 'Project',
-      width: '33%',
-    },
-    {
-      url: '',
-      title: 'Project',
-      width: '33%',
-    },
-    {
-      url: '',
-      title: 'Project',
-      width: '33%',
-    },
-    {
-      url: '',
-      title: 'Project',
-      width: '33%',
-    },
-  ];
+  const [projects, setProjects] = useState([])
+  useEffect(() => {
+    axios('projects/').then(response => {
+      setProjects(response.data.map(r => {
+        return {...r, width: "33%"}
+      }));
+    })
+  }, []);
 
   return (
     <Container className={classes.root} component="section">
@@ -146,18 +107,18 @@ function ProductCategories(props) {
           Portfolio
         </Typography>
       <div className={classes.images}>
-        {images.map((image) => (
+        {projects.map((project) => (
           <ButtonBase
-            key={image.title}
+            key={project.name}
             className={classes.imageWrapper}
             style={{
-              width: image.width,
+              width: project.width,
             }}
           >
             <div
               className={classes.imageSrc}
               style={{
-                backgroundImage: `url(${image.url})`,
+                backgroundImage: `url(${project.url})`,
               }}
             />
             <div className={classes.imageBackdrop} />
@@ -168,7 +129,7 @@ function ProductCategories(props) {
                 color="inherit"
                 className={classes.imageTitle}
               >
-                {image.title}
+                {project.name}
                 <div className={classes.imageMarked} />
               </Typography>
             </div>
