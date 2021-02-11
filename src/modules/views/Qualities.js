@@ -4,9 +4,13 @@ import { withStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import Container from '@material-ui/core/Container';
 import Typography from '../components/Typography';
-import LaptopWorking from '../components/LaptopWorking';
-import ModernTechnologies from '../components/ModernTechnologies';
-import FlyingYoga from '../components/FlyingYoga';
+
+// Lottie
+import Lottie from "react-lottie-player";
+import LaptopWorking from '../animations/LaptopWorking.animation.json';
+import ModernTechnologies from '../animations/ModernTechnologies.animation.json';
+import FlyingYoga from '../animations/FlyingYoga.animation.json';
+
 
 const styles = (theme) => ({
   root: {
@@ -53,7 +57,11 @@ function Qualities(props) {
         <Grid container spacing={5}>
           <Grid item xs={12} md={4}>
             <div className={classes.item}>
-              <LaptopWorking />
+              <Lottie
+                loop
+                animationData={LaptopWorking}
+                play
+              />
               <Typography variant="h6" className={classes.title}>
                 Quality Software
               </Typography>
@@ -66,7 +74,11 @@ function Qualities(props) {
           </Grid>
           <Grid item xs={12} md={4}>
             <div className={classes.item}>
-              <FlyingYoga />
+              <Lottie
+                loop
+                animationData={FlyingYoga}
+                play
+              />
               <Typography variant="h6" className={classes.title}>
                 Agile Development
               </Typography>
@@ -79,7 +91,11 @@ function Qualities(props) {
           </Grid>
           <Grid item xs={12} md={4}>
             <div className={classes.item}>
-              <ModernTechnologies />
+              <Lottie
+                loop
+                animationData={ModernTechnologies}
+                play
+              />
               <Typography variant="h6" className={classes.title}>
                 Responsive Design
               </Typography>
