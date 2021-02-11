@@ -64,10 +64,10 @@ function HeroLayout(props) {
   );
 }
 
-ProductHeroLayout.propTypes = {
+HeroLayout.propTypes = {
   backgroundClassName: PropTypes.string.isRequired,
   children: PropTypes.node,
   classes: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles)(ProductHeroLayout);
+export default withStyles(styles)(HeroLayout);
