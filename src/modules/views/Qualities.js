@@ -42,8 +42,10 @@ const styles = (theme) => ({
     top: -180,
   },
   animation: {
-    width: '304px',
-    height: '304px'
+    [theme.breakpoints.up('md')]: {
+      width: '304px',
+      height: '304px'
+    }
   },
   text: {
     textAlign: 'center'
