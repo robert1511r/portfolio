@@ -1,12 +1,12 @@
 import withRoot from './modules/withRoot';
 // --- Post bootstrap -----
 import React from 'react';
-import ProductCategories from './modules/views/ProductCategories';
-import AppFooter from './modules/views/AppFooter';
+import Projects from './modules/views/Projects';
+import Footer from './modules/views/Footer';
 import Hero from './modules/views/Hero';
 import Qualities from './modules/views/Qualities';
 import AboutMe from './modules/views/AboutMe';
-import ProductCTA from './modules/views/ProductCTA';
+import ContactForm from './modules/views/ContactForm';
 
 function Index() {
   return (
@@ -14,9 +14,9 @@ function Index() {
       <Hero />
       <AboutMe />
       <Qualities />
-      <ProductCategories />
-      <ProductCTA />
-      <AppFooter />
+      <Projects />
+      <ContactForm />
+      <Footer />
     </React.Fragment>
   );
 }

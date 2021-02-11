@@ -85,7 +85,7 @@ const styles = (theme) => ({
   },
 });
 
-function ProductCategories(props) {
+function Projects(props) {
   const { classes } = props;
   const [projects, setProjects] = useState([])
   useEffect(() => {
@@ -140,8 +140,8 @@ function ProductCategories(props) {
   );
 }
 
-ProductCategories.propTypes = {
+Projects.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles)(ProductCategories);
+export default withStyles(styles)(Projects);

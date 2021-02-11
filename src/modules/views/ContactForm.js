@@ -53,7 +53,7 @@ const styles = (theme) => ({
     right: 0,
     bottom: 0,
     width: '100%',
-    background: 'url(/static/onepirate/productCTAImageDots.png)',
+    background: 'url(/static/onepirate/ContactFormImageDots.png)',
   },
   image: {
     position: 'absolute',
@@ -66,7 +66,7 @@ const styles = (theme) => ({
   },
 });
 
-function ProductCTA(props) {
+function ContactForm(props) {
   const { classes } = props;
   const [open, setOpen] = React.useState(false);
 
@@ -134,8 +134,8 @@ function ProductCTA(props) {
   );
 }
 
-ProductCTA.propTypes = {
+ContactForm.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles)(ProductCTA);
+export default withStyles(styles)(ContactForm);
