@@ -39,7 +39,7 @@ const styles = (theme) => ({
   },
 });
 
-function ProductValues(props) {
+function Qualities(props) {
   const { classes } = props;
 
   return (
@@ -95,8 +95,8 @@ function ProductValues(props) {
   );
 }
 
-ProductValues.propTypes = {
+Qualities.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles)(ProductValues);
+export default withStyles(styles)(Qualities);
