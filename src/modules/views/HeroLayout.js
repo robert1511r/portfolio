@@ -44,7 +44,7 @@ const styles = (theme) => ({
   }
 });
 
-function ProductHeroLayout(props) {
+function HeroLayout(props) {
   const { backgroundClassName, children, classes } = props;
 
   return (

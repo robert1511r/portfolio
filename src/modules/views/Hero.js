@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import Button from '../components/Button';
 import Typography from '../components/Typography';
-import ProductHeroLayout from './ProductHeroLayout';
+import HeroLayout from './HeroLayout';
 
 const backgroundImage =
   'https://images.pexels.com/photos/924824/pexels-photo-924824.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940';
@@ -33,11 +33,11 @@ const styles = (theme) => ({
   }
 });
 
-function ProductHero(props) {
+function Hero(props) {
   const { classes } = props;
 
   return (
-    <ProductHeroLayout backgroundClassName={classes.background}>
+    <HeroLayout backgroundClassName={classes.background}>
       <Typography color="inherit" align="center" variant="h2" marked="center" className={classes.name}>
         Rob Joseph Williams
       </Typography>
@@ -54,12 +54,12 @@ function ProductHero(props) {
       >
         Learn More
       </Button>
-    </ProductHeroLayout>
+    </HeroLayout>
   );
 }
 
-ProductHero.propTypes = {
+Hero.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles)(ProductHero);
+export default withStyles(styles)(Hero);
