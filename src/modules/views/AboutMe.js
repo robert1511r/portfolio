@@ -28,39 +28,14 @@ const styles = (theme) => ({
   title: {
     marginBottom: theme.spacing(14),
   },
-  number: {
-    fontSize: 24,
-    fontFamily: theme.typography.fontFamily,
-    color: theme.palette.secondary.main,
-    fontWeight: theme.typography.fontWeightMedium,
-  },
-  image: {
-    height: 55,
-    marginTop: theme.spacing(4),
-    marginBottom: theme.spacing(4),
-  },
-  curvyLines: {
-    pointerEvents: 'none',
-    position: 'absolute',
-    top: -180,
-    opacity: 0.7,
-  },
-  button: {
-    marginTop: theme.spacing(8),
-  },
 });
 
-function ProductHowItWorks(props) {
+function AboutMe(props) {
   const { classes } = props;
 
   return (
     <section id="about-me" className={classes.root}>
       <Container className={classes.container}>
-        <img
-          src="/static/themes/onepirate/productCurvyLines.png"
-          className={classes.curvyLines}
-          alt="curvy lines"
-        />
         <Typography
           variant="h4"
           marked="center"
@@ -88,8 +63,8 @@ function ProductHowItWorks(props) {
   );
 }
 
-ProductHowItWorks.propTypes = {
+AboutMe.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles)(ProductHowItWorks);
+export default withStyles(styles)(AboutMe);

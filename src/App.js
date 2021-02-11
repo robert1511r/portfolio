@@ -5,14 +5,14 @@ import ProductCategories from './modules/views/ProductCategories';
 import AppFooter from './modules/views/AppFooter';
 import Hero from './modules/views/Hero';
 import ProductValues from './modules/views/ProductValues';
-import ProductHowItWorks from './modules/views/ProductHowItWorks';
+import AboutMe from './modules/views/AboutMe';
 import ProductCTA from './modules/views/ProductCTA';
 
 function Index() {
   return (
     <React.Fragment>
       <Hero />
-      <ProductHowItWorks />
+      <AboutMe />
       <ProductValues />
       <ProductCategories />
       <ProductCTA />
