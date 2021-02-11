@@ -41,6 +41,13 @@ const styles = (theme) => ({
     position: 'absolute',
     top: -180,
   },
+  animation: {
+    width: '304px',
+    height: '304px'
+  },
+  text: {
+    textAlign: 'center'
+  }
 });
 
 function Qualities(props) {
@@ -58,6 +65,7 @@ function Qualities(props) {
           <Grid item xs={12} md={4}>
             <div className={classes.item}>
               <Lottie
+                className={classes.animation}
                 loop
                 animationData={LaptopWorking}
                 play
@@ -65,7 +73,7 @@ function Qualities(props) {
               <Typography variant="h6" className={classes.title}>
                 Quality Software
               </Typography>
-              <Typography variant="h5">
+              <Typography className={classes.text} variant="h5">
                 Prioritizing performance and efficiency while writing code so it can scale 
                 and be maintained accordingly. Constantly following the Don’t Repeat Yourself (DRY)
                 principles and Test Driven Development (TDD) process. 
@@ -75,6 +83,7 @@ function Qualities(props) {
           <Grid item xs={12} md={4}>
             <div className={classes.item}>
               <Lottie
+                className={classes.animation}
                 loop
                 animationData={FlyingYoga}
                 play
@@ -82,7 +91,7 @@ function Qualities(props) {
               <Typography variant="h6" className={classes.title}>
                 Agile Development
               </Typography>
-              <Typography variant="h5">
+              <Typography className={classes.text} variant="h5">
                 Comfortable working with agile development processes like SCRUM. 
                 Driven towards the DevOps mindset to continuously write and deliver 
                 code that adds value to the project based on client’s and business model requirements.
@@ -92,6 +101,7 @@ function Qualities(props) {
           <Grid item xs={12} md={4}>
             <div className={classes.item}>
               <Lottie
+                className={classes.animation}
                 loop
                 animationData={ModernTechnologies}
                 play
@@ -99,7 +109,7 @@ function Qualities(props) {
               <Typography variant="h6" className={classes.title}>
                 Responsive Design
               </Typography>
-              <Typography variant="h5">
+              <Typography className={classes.text} variant="h5">
                 Following the mobile first approach using CSS frameworks when implementing the design, 
                 offering fast and seamless user experience. 
               </Typography>
