@@ -23,7 +23,9 @@ const styles = (theme) => ({
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
-    padding: theme.spacing(0, 5),
+    [theme.breakpoints.up('md')]: {
+      padding: theme.spacing(0, 20)
+    }
   },
   title: {
     marginBottom: theme.spacing(14),

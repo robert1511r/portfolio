@@ -48,7 +48,7 @@ const styles = (theme) => ({
     }
   },
   text: {
-    textAlign: 'center'
+    textAlign: 'justify'
   }
 });
 
