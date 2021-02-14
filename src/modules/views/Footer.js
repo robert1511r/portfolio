@@ -91,7 +91,7 @@ export default function Footer() {
                 <a href="https://twitter.com/robjwilliams_" target="_blank" rel="noreferrer" className={classes.icon}>
                   <TwitterIcon />
                 </a>
-                <a href="https://www.instagram.com/robertjwilliams_/" target="_blank" rel="noreferrer" className={classes.icon}>
+                <a href="https://www.instagram.com/robjwilliams_/" target="_blank" rel="noreferrer" className={classes.icon}>
                   <InstagramIcon />
                 </a>
               </Grid>
